@@ -1,11 +1,7 @@
-import IBook from "../models/IBook";
+import IListBook from "../models/IListBook";
 
-interface ListBook {
-      data: Array<IBook>;
-}
-
-const BookUtil: ListBook = {
-      data: [
+const BookUtil: IListBook = {
+      items: [
                   {
                         id: 1,
                         title: 'CriptoMonedas',
@@ -33,4 +29,4 @@ const BookUtil: ListBook = {
             ]
 }
 
-export const dataBook: Array<IBook> = BookUtil.data;
+export const dataBook = BookUtil.items;
