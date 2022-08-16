@@ -1,0 +1,12 @@
+.item {
+      margin: auto;
+      width: 15rem;
+      /* width: auto; */
+      margin-bottom: 10px;
+}
+
+.item img {
+      width: 150px;
+      height: 220px;
+      border: 1px ridge #001c43;
+}

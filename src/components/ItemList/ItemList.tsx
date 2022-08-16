@@ -1,9 +1,11 @@
-import IListBook from "../../models/IListBook";
+import  { TListBook } from "../../types/GlobalTypes";
 import Item from "../Item/Item";
 
-const ItemList = ( { items }: IListBook ) => {
+import "./ItemList.css";
+
+const ItemList = ( { items }: TListBook ) => {
       return (
-            <div>
+            <div className="item-list">
                   {
                         items.map( data => ( <Item key={data.id} item={data} /> ) )
                   }

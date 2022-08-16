@@ -1,0 +1,25 @@
+.item-list {
+      display: grid;
+      grid-template-columns: repeat( 4, minmax(0, 1fr) );
+      gap: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+      .item-list {
+            grid-template-columns: repeat( 3, minmax(0, 1fr) );
+      }
+}
+
+@media screen and (max-width: 950px) {
+      .item-list {
+            grid-template-columns: repeat( 2, minmax(0, 1fr) );
+      }
+}
+
+@media screen and (max-width: 600px) {
+      .item-list {
+            grid-template-columns: repeat( 1, minmax(0, 1fr) );
+      }
+}
